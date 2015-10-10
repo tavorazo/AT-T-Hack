@@ -1,4 +1,7 @@
 $(document).ready(function(){
+			$('.user').hide(); //muestro mediante id
+			$('.doctor').hide(); //oculto mediante id
+			$('.clinic').hide(); //muestro mediante clase
 		$("#paciente").on( "click", function() {
 			$('.user').show(); //muestro mediante id
 			$('.doctor').hide(); //oculto mediante id
