@@ -18,12 +18,12 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 	<!-- Banner      -->
 	<section id="banner">
-
-		<h2>Conectate con los <strong>  mejores medicos </strong> del mundo con AT&T </h2>
-		<p>Registrate Gratis</p>
+		<img src="images/logo.png" alt="">
+		<h2>Diagnostic<strong>App</strong></h2>
+		<p>Conectate con los <strong>  mejores medicos </strong> del mundo con AT&T </p>
 		<ul class="actions">
-			<li><a href="#two" class="button special">Registrate</a></li>
-			<li><a href="login.html" class="button special2">Entrar</a></li>
+			<li><a href="#registro" class="button special">Registrate</a></li>
+			<li><a href="login.php" class="button special2">Entrar</a></li>
 		</ul>
 	</section>
 
@@ -64,8 +64,8 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 </div>
 </section>
 
-<!-- Two -->
-<section id="two" class="wrapper style2 special">
+<!-- registro -->
+<section id="registro" class="wrapper style2 special">
 	<div class="inner narrow">
 		<header>
 			<h2>Registrate</h2>
@@ -81,31 +81,31 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<label>Registro para pacientes</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre paciente</label>
-				<input name="nombre" id="nombre" type="text">
+				<input name="nombre" id="nombre" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="apellido">Apellidos</label>
-				<input name="apellido" id="apellido" type="text">
+				<input name="apellido" id="apellido" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="edad">Edad</label>
-				<input name="edad" id="edad" type="text">
+				<input name="edad" id="edad" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>
-				<input name="email" id="email" type="email">
+				<input name="email" id="email" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email-conf">Confirma tu correo</label>
-				<input name="email-conf" id="email-conf" type="email">
+				<input name="email-conf" id="email-conf" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password">Contraseña</label>
-				<input name="password" id="password" type="password">
+				<input name="password" id="password" type="password" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password-conf">Confirma tu contraseña</label>
-				<input name="password-conf" id="password-conf" type="password">
+				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
 				<li><input value="Registrate" type="submit"></li>
@@ -116,31 +116,31 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<label>Registro para doctores</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre doctor</label>
-				<input name="nombre" id="nombre" type="text">
+				<input name="nombre" id="nombre" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="apellido">Apellido</label>
-				<input name="apellido" id="apellido" type="text">
+				<input name="apellido" id="apellido" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="cedula">Cedula doctor</label>
-				<input name="cedula" id="cedula" type="text">
+				<input name="cedula" id="cedula" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>
-				<input name="email" id="email" type="email">
+				<input name="email" id="email" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email-conf">Confirma tu correo</label>
-				<input name="email-conf" id="email-conf" type="email">
+				<input name="email-conf" id="email-conf" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password">Contraseña</label>
-				<input name="password" id="password" type="password">
+				<input name="password" id="password" type="password" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password-conf">Confirma tu contraseña</label>
-				<input name="password-conf" id="password-conf" type="password">
+				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
 				<li><input value="Registrate" type="submit"></li>
@@ -151,31 +151,31 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<label>Registro para clinicas</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre de la clinica</label>
-				<input name="nombre" id="nombre" type="text">
+				<input name="nombre" id="nombre" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="apellido">Localidad</label>
-				<input name="apellido" id="apellido" type="text">
+				<input name="apellido" id="apellido" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="cedula">Cedula clinica</label>
-				<input name="cedula" id="cedula" type="text">
+				<input name="cedula" id="cedula" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo de administrador</label>
-				<input name="email" id="email" type="email">
+				<input name="email" id="email" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email-conf">Confirma tu correo</label>
-				<input name="email-conf" id="email-conf" type="email">
+				<input name="email-conf" id="email-conf" type="email" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password">Contraseña</label>
-				<input name="password" id="password" type="password">
+				<input name="password" id="password" type="password" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="password-conf">Confirma tu contraseña</label>
-				<input name="password-conf" id="password-conf" type="password">
+				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
 				<li><input value="Registrate" type="submit"></li>
