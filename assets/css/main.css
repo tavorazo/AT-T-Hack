@@ -2020,7 +2020,7 @@
 		}
 
 			.grid-form .form-control.narrow {
-				width: 47%;
+				width: 100%;
 			}
 
 		.grid-form .actions {
@@ -2041,6 +2041,7 @@
 		display: block;
 		font-size: 0.9em;
 		margin: 0 0 0.2em 0;
+		float: left;
 		text-transform: uppercase;
 	}
 
