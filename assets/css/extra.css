@@ -1,0 +1,17 @@
+.boton{
+	width: 30.3%;
+	height: 100px;
+	background: rgb(0, 205, 207);
+	margin-left: 1%;
+	font-size: 20px;
+	color:#fff;
+	padding-top: 37.5px;
+	cursor: pointer;
+	-webkit-transition: all .6s ease; -moz-transition: all .6s ease; -ms-transition: all .6s ease; transition: all .6s ease;
+}
+.boton:hover{
+	opacity: 0.7; 
+}
+form{
+	margin-top: 150px;
+}

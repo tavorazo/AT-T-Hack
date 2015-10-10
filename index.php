@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Medical app</title>
+		<title>DiagnosticApp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/extra.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
@@ -67,26 +68,112 @@
 					<header>
 						<h2>Registrate</h2>
 					</header>
-					<form class="grid-form" method="post" action="#">
+					
+					<input type="button" class="boton" id="paciente" name="boton1" value="Paciente">
+					<input type="button" class="boton" id="doctor" name="boton2" value="Doctor">
+					<input type="button" class="boton" id="clinic" name="boton2" value="Clinica">
+		
+
+					<!--Paciente -->
+					<form class="grid-form user" method="post" action="#" >
+						<label>Registro para pacientes</label><hr>
 						<div class="form-control narrow">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text">
+							<label for="nombre">Nombre paciente</label>
+							<input name="nombre" id="nombre" type="text">
 						</div>
 						<div class="form-control narrow">
-							<label for="email">correo</label>
+							<label for="apellido">Apellidos</label>
+							<input name="apellido" id="apellido" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="edad">Edad</label>
+							<input name="edad" id="edad" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="email">Correo</label>
 							<input name="email" id="email" type="email">
 						</div>
 						<div class="form-control narrow">
-							<label for="email2">confirma tu correo</label>
-							<input name="email2" id="email2" type="email">
+							<label for="email-conf">Confirma tu correo</label>
+							<input name="email-conf" id="email-conf" type="email">
 						</div>
 						<div class="form-control narrow">
-							<label for="password">contraseña</label>
+							<label for="password">Contraseña</label>
 							<input name="password" id="password" type="password">
 						</div>
 						<div class="form-control narrow">
-							<label for="password2">Confirma tu contraseña</label>
-							<input name="password2" id="password2" type="password">
+							<label for="password-conf">Confirma tu contraseña</label>
+							<input name="password-conf" id="password-conf" type="password">
+						</div>
+						<ul class="actions">
+							<li><input value="Registrate" type="submit"></li>
+						</ul>
+					</form>
+					<!--doctor-->
+					<form class="grid-form doctor" method="post" action="#" >
+						<label>Registro para doctores</label><hr>
+						<div class="form-control narrow">
+							<label for="nombre">Nombre doctor</label>
+							<input name="nombre" id="nombre" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="apellido">Apellido</label>
+							<input name="apellido" id="apellido" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="cedula">Cedula doctor</label>
+							<input name="cedula" id="cedula" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="email">Correo</label>
+							<input name="email" id="email" type="email">
+						</div>
+						<div class="form-control narrow">
+							<label for="email-conf">Confirma tu correo</label>
+							<input name="email-conf" id="email-conf" type="email">
+						</div>
+						<div class="form-control narrow">
+							<label for="password">Contraseña</label>
+							<input name="password" id="password" type="password">
+						</div>
+						<div class="form-control narrow">
+							<label for="password-conf">Confirma tu contraseña</label>
+							<input name="password-conf" id="password-conf" type="password">
+						</div>
+						<ul class="actions">
+							<li><input value="Registrate" type="submit"></li>
+						</ul>
+					</form>
+					<!--doctor-->
+					<form class="grid-form clinic" method="post" action="#" >
+						<label>Registro para clinicas</label><hr>
+						<div class="form-control narrow">
+							<label for="nombre">Nombre de la clinica</label>
+							<input name="nombre" id="nombre" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="apellido">Localidad</label>
+							<input name="apellido" id="apellido" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="cedula">Cedula clinica</label>
+							<input name="cedula" id="cedula" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="email">Correo de administrador</label>
+							<input name="email" id="email" type="email">
+						</div>
+						<div class="form-control narrow">
+							<label for="email-conf">Confirma tu correo</label>
+							<input name="email-conf" id="email-conf" type="email">
+						</div>
+						<div class="form-control narrow">
+							<label for="password">Contraseña</label>
+							<input name="password" id="password" type="password">
+						</div>
+						<div class="form-control narrow">
+							<label for="password-conf">Confirma tu contraseña</label>
+							<input name="password-conf" id="password-conf" type="password">
 						</div>
 						<ul class="actions">
 							<li><input value="Registrate" type="submit"></li>
@@ -110,6 +197,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/scroll.js"></script>
+			<script src="assets/js/show-hide.js"></script>
 
 	</body>
 </html>
