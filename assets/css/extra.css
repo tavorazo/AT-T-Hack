@@ -1,13 +1,18 @@
+#banner img{
+	width: 140px;
+	margin: auto;
+}
+
 .boton{
 	width: 30.3%;
 	height: 100px;
 	background: rgb(0, 205, 207);
 	margin-left: 1%;
-	font-size: 20px;
+	font-size: 1em;
 	color:#fff;
 	padding-top: 37.5px;
 	cursor: pointer;
-	-webkit-transition: all .6s ease; -moz-transition: all .6s ease; -ms-transition: all .6s ease; transition: all .6s ease;
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; -ms-transition: all .4s ease; transition: all .4s ease;
 }
 .boton:hover{
 	opacity: 0.7; 
@@ -20,12 +25,68 @@
 form{
 	margin-top: 150px;
 }
-form.login{
-	margin: 0 !important;
-	padding-top: 0;
-	background: #333 !important;
+
+
+#bg-login{
+	background: url("http://blog.elekta.com/wp-content/uploads/2013/04/Elekta_VersaHD_28_RKP.jpg");
+	background-position: 0;
+	position: fixed;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	filter: blur(5px); 
+	-webkit-filter: blur(5px); /* Chrome y Safari */
+	-moz-filter: blur(5px); /* Mozilla */
+	-ms-filter: blur(5px); /* Internet Explorer */
+	-o-filter: blur(5px); /* Opera */
 }
-form.login input, form.login label {
+
+#etiqueta{
+	width: 60%;
+	margin: auto;
+	padding:10px 2%;
+	color: #fafafa;
+	font-size: 20px;
+	background: #00cdcf;
+	text-align: center;
+}
+form.login{
+	background: #f2f2f2;
+	width: 60%;
+	margin: auto;
+	padding: 20% 2%;
+}
+form.login label {
 	float: left;
-	width: 200px;
+	width: 120px;
+}
+form.login input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+form.login input[type='submit']{
+	background: #555;
+	color: #f2f2f2 !important;
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; -ms-transition: all .4s ease; transition: all .4s ease;
+}
+form.login input[type='submit']:hover{
+	opacity: .8;
+}
+
+form.login span {
+	margin: -45px -15px;
+	width: 30px;
+    text-align: center;
+    background: #f2f2f2;
+    position: absolute;
+    left: 50%;
+	color: #00cdcf;
+	font-size: 20px;	
+}
+form.login hr {
+	border-color: #00cdcf;
+}
+form.login a {
+	text-align: center;
+	text-decoration: none;
 }
