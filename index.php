@@ -131,7 +131,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			</div>
 			<div class="form-control narrow">
 				<label for="edad">Fecha de nacimiento</label>
-				<input name="edad" id="edad" type="number" required style="width:100%">
+				<input name="edad" id="edad" type="date" required style="width:100%">
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>
