@@ -45,7 +45,7 @@
             	<br><br>
             	<textarea name="Diagnostico" id="" cols="20" rows="10" style="background:#fff" placeholder="Escribe tu diagnostico medico"></textarea>
             	<br><br>
-				<input value="Enviar diagnostico" type="submit" class="alt">
+				<input value="Enviar diagnostico" type="submit" class="alt" style="font-size:.8em; padding:5px; height:40px">
             </div>
         </div>
 	</div>	
