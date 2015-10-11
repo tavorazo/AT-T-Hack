@@ -1,3 +1,15 @@
+<link rel="stylesheet" href="../../assets/css/main.css" />
+	<link rel="stylesheet" href="../../assets/css/extra.css" />
+	<link rel = 'stylesheet' href = 'css/style.css'>
+		<link rel = 'stylesheet' href = 'owl.carousel/owl-carousel/owl.theme.css'>
+		<link rel = 'stylesheet' href = 'owl.carousel/owl-carousel/owl.transitions.css'>
+		<link rel = 'stylesheet' href = 'owl.carousel/owl-carousel/owl.carousel.css'>
+		<script src = 'Dependency/jquery-1.11.3.min.js'></script>
+		<script src = 'owl.carousel/owl-carousel/owl.carousel.min.js'></script>
+		<style> 
+			span{     visibility: hidden;}
+		</style>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <?php
 	//include_once('Link.php');
 	//$link = Link::createUsingDefaultFile();
@@ -18,5 +30,18 @@
 				<img src = '{$result}' alt = 'Picture'>
 			</div>";
 	$code .= '</div>';
-	echo $code;
+	$script = "<script>
+			$(document).ready(function() {
+				$('#owl-demo').owlCarousel({
+					goToFirstSpeed : 0,
+					navigation : false,
+					paginationSpeed : 0,
+					slideSpeed : 0,
+					singleItem : true, 
+					dots: false, autoPlay: 50
+				});
+			});
+		</script>";
+	echo  $code. " " .$script;
 ?>
+	

@@ -11,7 +11,7 @@
 	<script type="text/javascript">
 	$(function(){
 		$('#entrar').click(function(){
-			var url = 'control/Back/login.php';
+			var url = 'login.html';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -24,7 +24,7 @@
 		});
 
 	function redirect(){
-		window.location("panel.php");
+		window.location("panel.html");
 		return false;
 	}
 	</script>
@@ -34,7 +34,7 @@
 	</div>
 	
 	<div id="etiqueta">INICIA SESIÓN</div>
-	<form action="panel.php" class="login" onsubmit="redirect()"> 
+	<form action="panel.html" class="login" onsubmit="redirect()"> 
 		<label for="usuario">Usuario:</label>
 		<input type="text" name="usuario" required>
 		<label for="password">Contraseña: </label>
@@ -49,7 +49,7 @@
 		<br><br><br><br>
 		<ul class="actions">
 			<center>
-				<li><a href="../index.php#registro" class="button special" style="background:#EE4CBE; border:none">Registrate</a></li>
+				<li><a href="../index.html#registro" class="button special" style="background:#EE4CBE; border:none">Registrate</a></li>
 			</center>
 		</ul>	
 	</form>

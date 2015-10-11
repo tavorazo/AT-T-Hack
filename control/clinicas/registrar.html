@@ -1,15 +1,4 @@
-<?php
-include("../Back/base.php");
 
-
-$resultado->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctor");
-
-$doctores="";
-while($res = $resultado->fetch_object()){
-	$doctores.="<option value='".$res->id_doctor."'>".$res->NomDr."</option>";
-}
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,13 +12,16 @@ while($res = $resultado->fetch_object()){
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
-	    <a href="../panel.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
+	    <a href="../panel.html"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 		<form action="" style="padding:0 10px;">
 			<label for="doctor">Nombre del doctor</label>
 			<select name="doctor" id="doctor">
 				<option value="">- Doctor -</option>
-				<?php //echo($doctores);?>
+				<option value="">Doctor 1</option>
+				<option value="">Doctor 2</option>
+				<option value="">Doctor 3</option>
+				<option value="">Doctor 4</option>
 			</select>
 			<br><br>
 			<input value="Registrar doctor" type="submit" class="alt">

@@ -13,6 +13,13 @@
 		<link rel = 'stylesheet' href = 'owl.carousel/owl-carousel/owl.carousel.css'>
 		<script src = 'Dependency/jquery-1.11.3.min.js'></script>
 		<script src = 'owl.carousel/owl-carousel/owl.carousel.min.js'></script>
+		<style> 
+			span{     visibility: hidden;}
+		</style>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+
+
 </head>
 <body id="bg-panel">
 	<div id="menu">
@@ -20,22 +27,19 @@
 	    <a href="../panel.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 	<div id="main" style="padding:0 10px">
-		<?php
-			include_once('picture.php');
-		?>
-		<script>
-			$(document).ready(function() {
-				$("#owl-demo").owlCarousel({
-					autoPlay : 100,
-					stopOnHover : true,
-					goToFirstSpeed : 0,
-					navigation : false,
-					slideSpeed : 100,
-					paginationSpeed : 0,
-					singleItem : true
-				});
+		<script type="text/javascript">
+	$(function(){
+			var url = 'http://diagnostic-app.herokuapp.com/doctores/picture.php';
+			$.ajax({
+				type: "POST",
+				url : url,
+				//data: $('#clientForm').serialize(),
+				success: function(data){
+					$('#main').html(data);
+				}
 			});
-		</script>
+	});
+	</script>
 		<div class="td">    
             <div id="datos" style="margin-top:20px; padding:10px 5px; ">
                 <p><strong>Doctor:</strong> Dr Nombre Apellido<br>
@@ -43,7 +47,7 @@
             	<br><br>
             	<textarea name="Diagnostico" id="" cols="20" rows="10" style="background:#fff" placeholder="Escribe tu diagnostico medico"></textarea>
             	<br><br>
-				<input value="Enviar diagnostico" type="submit" class="alt">
+				<input value="Enviar diagnostico" type="submit" class="alt" style="font-size:.8em; padding:5px; height:40px">
             </div>
         </div>
 	</div>	
