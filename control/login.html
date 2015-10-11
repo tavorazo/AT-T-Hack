@@ -22,6 +22,11 @@
 			});
 			return false;
 		});
+
+	function redirect(){
+		window.location("panel.php");
+		return false;
+	}
 	</script>
 </head>
 <body>
@@ -29,11 +34,11 @@
 	</div>
 	
 	<div id="etiqueta">INICIA SESIÓN</div>
-	<form class="login"> 
+	<form action="panel.php" class="login" onsubmit="redirect()"> 
 		<label for="usuario">Usuario:</label>
 		<input type="text" name="usuario" required>
 		<label for="password">Contraseña: </label>
-		<input type="password" name="contraseña" required>
+		<input type="password" name="contrasena" required>
 		<br><br>
 		<ul class="actions">
 			<center>
@@ -48,5 +53,8 @@
 			</center>
 		</ul>	
 	</form>
+            
+
+
 </body>
 </html>

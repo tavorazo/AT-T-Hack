@@ -7,16 +7,68 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/extra.css" />
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var a = getUrlVars()["contrasena"];
+			switch(a){
+				case "usuario":
+					$("#usuario").show();
+					$("#doctor").hide();
+					$("#clinica").hide();
+					break;
+				case "doctor":
+					$("#usuario").hide();
+					$("#doctor").show();
+					$("#clinica").hide();
+					break;
+				case "clinica":
+					$("#usuario").hide();
+					$("#doctor").hide();
+					$("#clinica").show();
+					break;
+				default: 
+					$("#usuario").hide();
+					$("#doctor").hide();
+					$("#clinica").hide();
+					$('#alerta').css({
+						width: '100%',
+						background: 'red',
+						height: '50px',
+						position: 'static',
+						color: 'white',
+						padding: '15px',
+						top: '20px'
+					}).text('Usuario incorrecto');
+					setTimeout ("redireccionar()", 1000);
+			}
+		});
+
+		function redireccionar() {
+			location.href="login.html"
+		} 
+
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+	</script>
 </head>
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
 	    <a href="../index.php"><img src="../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
+	<div id="alerta"></div>
 	<div id="main">
-	    <center><h1>!Hola <strong>usuario</strong>! Bienvenida de nuevo</h1></center>
-	    <br><br>
-	    <div class="panel" id="usuario">
+	    
+	    <div class="panel" id="usuario" >
+		    <center><h1>!Hola <strong>usuario</strong>! Bienvenida de nuevo</h1></center>
+		    <br><br>
 	        <h1>Panel de control</h1>
 	        <div class="option">
 	            <div id="img"><img src="../images/2.png" style="width: 81px; margin: 15px 41%;"></div>
@@ -34,15 +86,16 @@
 	            <div id="img"><img src="../images/4.png" style="margin-top: 50px; width: 110px;"></div>
 	            <p> Llamada de emergencia</p>
 	        </div>
+	    <br><br><br><br>
 	    </div>
 	    
 	    
-	    <br><br><br><br>
 	    
-	    <center><h1>!Hola <strong>doctor</strong>! Estos son los trabajos a revisar</h1></center>
-	    <br><br>
-	    <div class="panel" id="doctor">
-	        <div class="lista">
+	    
+	    <div class="panel" id="doctor" >
+	        <center><h1>!Hola <strong>doctor</strong>! Estos son los trabajos a revisar</h1></center>
+	    	<br><br>
+	    	<div class="lista">
 	       		<h1>Lista de casos para revisar</h1>
 	            <div class="td">
 	                <div id="img">
@@ -74,14 +127,14 @@
 	                </div>
 	            </div>
 	        </div>
+	    <br><br><br>
 	    </div>
 	    
 	    
-	    <br><br><br>
 	    
-	    <center><h1>!Bienvenida <strong>clinica</strong>! Estamos listos para trabajar</h1></center>
-	    <br><br>
-	    <div class="panel" id="doctor">
+	    <div class="panel" id="clinica" >
+	       <center><h1>!Bienvenida <strong>clinica</strong>! Estamos listos para trabajar</h1></center>
+	    	<br><br>
 	       <div class="lista">
 	       		<h1>Panel de control</h1>
 	        </div> 
