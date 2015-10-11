@@ -190,6 +190,8 @@ form.login a {
 	font-size:.8em;
 }
 
+#alerta, #alerta2, #alerta3{ margin-top: 30px}
+
 @media (min-width: 650px) {
   /*login.php*/
   form.login, #etiqueta{

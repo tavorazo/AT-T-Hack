@@ -19,7 +19,15 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				url : url,
 				data: $('#clientForm').serialize(),
 				success: function(data){
-					alert(data);
+					$('#alerta').css({
+						width: '100%',
+						background: '#01DFA5',
+						height: '50px',
+						position: 'static',
+						color: 'white',
+						padding: '15px',
+						top: '20px'
+					}).text('Enviado correctamente');
 				}
 			});
 			return false;
@@ -31,7 +39,15 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				url : url,
 				data: $('#docForm').serialize(),
 				success: function(data){
-					alert(data);
+					$('#alerta2').css({
+						width: '100%',
+						background: '#01DFA5',
+						height: '50px',
+						position: 'static',
+						color: 'white',
+						padding: '15px',
+						top: '20px'
+					}).text('Enviado correctamente');
 				}
 			});
 			return false;
@@ -43,7 +59,15 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				url : url,
 				data: $('#clinForm').serialize(),
 				success: function(data){
-					alert(data);
+					$('#alerta3').css({
+						width: '100%',
+						background: '#01DFA5',
+						height: '50px',
+						position: 'static',
+						color: 'white',
+						padding: '15px',
+						top: '20px'
+					}).text('Enviado correctamente');
 				}
 			});
 			return false;
@@ -114,8 +138,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 		<input type="button" class="boton" id="paciente" name="boton1" value="Paciente">
 		<input type="button" class="boton" id="doctor" name="boton2" value="Doctor">
-		<input type="button" class="boton" id="clinic" name="boton2" value="Clinica">
-
+		<input type="button" class="boton" id="clinic" name="boton2" value="Clinica">		
 
 		<!--Paciente -->
 		<form class="grid-form user" id="clientForm" method="post" action="#" >
@@ -152,6 +175,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<ul class="actions">
 				<li><input value="Registrate" type="submit" id="client"></li>
 			</ul>
+			<br><div id="alerta"></div>
 		</form>
 		<!--doctor-->
 		<form class="grid-form doctor" id="docForm" method="post" action="#" >
@@ -192,6 +216,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<ul class="actions">
 				<li><input value="Registrate" id="doc" type="submit"></li>
 			</ul>
+			<br><div id="alerta2"></div>
 		</form>
 		<!--doctor-->
 		<form class="grid-form clinic" id="clinForm" method="post" action="#" >
@@ -228,6 +253,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<ul class="actions">
 				<li><input value="Registrate" id="clin" type="submit"></li>
 			</ul>
+			<br><div id="alerta3"></div>
 		</form>
 	</div>
 </section>
