@@ -88,8 +88,8 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				<input name="apellido" id="apellido" type="text" required>
 			</div>
 			<div class="form-control narrow">
-				<label for="edad">Edad</label>
-				<input name="edad" id="edad" type="text" required>
+				<label for="edad">Fecha de nacimiento</label>
+				<input name="edad" id="edad" type="date" required style="width:100%">
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>
