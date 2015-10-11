@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
 Typify by TEMPLATED
 templated.co @templatedco
@@ -9,6 +9,47 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 	<title>DiagnosticApp</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#client').click(function(){
+			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			$.ajax({
+				type: "POST",
+				url : url,
+				data: $('#clientForm').serialize(),
+				success: function(data){
+					alert(data);
+				}
+			});
+			return false;
+		});
+		$('#doc').click(function(){
+			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			$.ajax({
+				type: "POST",
+				url : url,
+				data: $('#docForm').serialize(),
+				success: function(data){
+					alert(data);
+				}
+			});
+			return false;
+		});
+		$('#clin').click(function(){
+			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			$.ajax({
+				type: "POST",
+				url : url,
+				data: $('#clinForm').serialize(),
+				success: function(data){
+					alert(data);
+				}
+			});
+			return false;
+		});
+	});
+	</script>
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/extra.css" />
@@ -23,7 +64,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<p>Conectate con los <strong>  mejores medicos </strong> del mundo con AT&T </p>
 		<ul class="actions">
 			<li><a href="#registro" class="button special">Registrate</a></li>
-			<li><a href="login.php" class="button special2">Entrar</a></li>
+			<li><a href="control/login.php" class="button special2">Entrar</a></li>
 		</ul>
 	</section>
 
@@ -77,19 +118,20 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 		<!--Paciente -->
-		<form class="grid-form user" method="post" action="#" >
+		<form class="grid-form user" id="clientForm" method="post" action="#" >
 			<label>Registro para pacientes</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre paciente</label>
 				<input name="nombre" id="nombre" type="text" required>
 			</div>
+			<input name="type" value="client" type="text" id="type" style="visibility:hidden">
 			<div class="form-control narrow">
 				<label for="apellido">Apellidos</label>
 				<input name="apellido" id="apellido" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="edad">Fecha de nacimiento</label>
-				<input name="edad" id="edad" type="date" required style="width:100%">
+				<input name="edad" id="edad" type="number" required style="width:100%">
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>
@@ -108,16 +150,17 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
-				<li><input value="Registrate" type="submit"></li>
+				<li><input value="Registrate" type="submit" id="client"></li>
 			</ul>
 		</form>
 		<!--doctor-->
-		<form class="grid-form doctor" method="post" action="#" >
+		<form class="grid-form doctor" id="docForm" method="post" action="#" >
 			<label>Registro para doctores</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre doctor</label>
 				<input name="nombre" id="nombre" type="text" required>
 			</div>
+			<input name="type" value="doctor" type="text" id="type" style="visibility:hidden">
 			<div class="form-control narrow">
 				<label for="apellido">Apellido</label>
 				<input name="apellido" id="apellido" type="text" required>
@@ -147,16 +190,17 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
-				<li><input value="Registrate" type="submit"></li>
+				<li><input value="Registrate" id="doc" type="submit"></li>
 			</ul>
 		</form>
 		<!--doctor-->
-		<form class="grid-form clinic" method="post" action="#" >
+		<form class="grid-form clinic" id="clinForm" method="post" action="#" >
 			<label>Registro para clinicas</label><hr>
 			<div class="form-control narrow">
 				<label for="nombre">Nombre de la clinica</label>
 				<input name="nombre" id="nombre" type="text" required>
 			</div>
+			<input name="type" value="clinica" type="text" id="type" style="visibility:hidden">
 			<div class="form-control narrow">
 				<label for="apellido">Localidad</label>
 				<input name="apellido" id="apellido" type="text" required>
@@ -182,7 +226,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				<input name="password-conf" id="password-conf" type="password" required>
 			</div>
 			<ul class="actions">
-				<li><input value="Registrate" type="submit"></li>
+				<li><input value="Registrate" id="clin" type="submit"></li>
 			</ul>
 		</form>
 	</div>

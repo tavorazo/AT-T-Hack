@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>DiagnosticApp | Login</title>
@@ -28,7 +28,7 @@
 		<br><br><br><br>
 		<ul class="actions">
 			<center>
-				<li><a href="../index.html#registro" class="button special" style="background:#EE4CBE; border:none">Registrate</a></li>
+				<li><a href="../index.php#registro" class="button special" style="background:#EE4CBE; border:none">Registrate</a></li>
 			</center>
 		</ul>	
 	</form>
