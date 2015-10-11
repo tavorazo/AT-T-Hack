@@ -4,7 +4,6 @@ header("Content-Type: text/html;charset=utf-8");
 if(isset($_POST["type"]) && !empty($_POST["type"])){
     $type = $_POST["type"];
     echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
-    
     //echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
     switch($type){
         case 'client':client($_POST['nombre'],$_POST['apellido'],$_POST['edad'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf']);
@@ -16,7 +15,7 @@ if(isset($_POST["type"]) && !empty($_POST["type"])){
     }
 }
 else{
-    echo "a";
+   // echo "a";
     echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
     
 }
