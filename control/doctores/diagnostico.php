@@ -29,12 +29,12 @@
 		<script>
 			$(document).ready(function() {
 				$("#owl-demo").owlCarousel({
-					goToFirstSpeed : 0,
+					goToFirstSpeed : 50,
 					navigation : false,
-					slideSpeed : 0,
-					paginationSpeed : 0,
+					slideSpeed : 50,
+					paginationSpeed : 50,
 					singleItem : true, 
-					dots: false
+					dots: false, autoplay: true
 				});
 			});
 		</script>
