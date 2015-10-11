@@ -34,7 +34,7 @@
 					slideSpeed : 50,
 					paginationSpeed : 50,
 					singleItem : true, 
-					dots: false, autoplay: true
+					dots: false, autoPlay: 50
 				});
 			});
 		</script>
