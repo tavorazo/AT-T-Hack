@@ -1,5 +1,7 @@
 <?php
 include("../Back/base.php");
+
+/*
 $dbh->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctores");
 
 $doctores="";
@@ -7,7 +9,7 @@ while($rowDbh=mysql_fetch_object($dbh)){
 	$doctores.="<option value='".$rowDbh->id_doctor."'>".$rowDbh->NomDr."</option>";
 }
 
-                    
+                  */  
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +30,7 @@ while($rowDbh=mysql_fetch_object($dbh)){
 			<label for="doctor">Nombre del doctor</label>
 			<select name="doctor" id="doctor">
 				<option value="">- Doctor -</option>
-				<?php echo($doctores);?>
+				<?php //echo($doctores);?>
 			</select>
 			<br><br>
 			<input value="Registrar doctor" type="submit" class="alt">
