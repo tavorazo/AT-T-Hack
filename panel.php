@@ -18,19 +18,19 @@
 	    <br><br>
 	    <div class="panel" id="usuario">
 	        <div class="option">
-	            <img src="images/2.png">
+	            <div id="img"><img src="images/2.png" style="width: 81px; margin: 15px 41%;"></div>
 	            <p> Registra tus archivos</p>
 	        </div>
 	        <div class="option">
-	            <img src="images/3.png">
+	            <div id="img"><img src="images/3.png"></div>
 	            <p> Solicita diagnostico</p>
 	        </div>
 	        <div class="option">
-	           <img src="images/1.png">
+	           <div id="img"><img src="images/1.png" style="margin-top: 20px; height: 114px;"></div>
 	            <p> Chat con el doctor</p>
 	        </div>
 	        <div class="option">
-	            <img src="images/4.png">
+	            <div id="img"><img src="images/4.png" style="margin-top: 50px; width: 110px;"></div>
 	            <p> Llamada de emergencia</p>
 	        </div>
 	    </div>

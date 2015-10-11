@@ -1,6 +1,6 @@
 /*index.php*/
 #banner img{
-	width: 140px;
+	width: 200px;
 	margin: auto;
 }
 
@@ -134,9 +134,13 @@ form.login a {
 	background: #fff;
 	cursor: pointer;
 }
+.option #img{
+	width: 100%;
+	height: 200px;
+}
 .option img{
 	margin:10px 40%;
-	width:20%;
+	width:20%
 }
 .option p{
 	width:100%;
