@@ -11,12 +11,12 @@
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
-	    <img src="../../images/logo.png"></img> Diagnostic<strong>App</strong>
+	    <a href="../panel.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 		<form action="" style="padding:0 10px;">
 			<label for="paciente">Nombre de paciente</label>
 			<select name="paciente" id="paciente">
-				<option value="">- Doctor -</option>
+				<option value="">- Paciente -</option>
 				<option value="1">Paciente. Uno</option>
 				<option value="2">Paciente. Dos</option>
 			</select>

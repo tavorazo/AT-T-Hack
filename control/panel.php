@@ -11,7 +11,7 @@
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
-	    <img src="../images/logo.png"></img> Diagnostic<strong>App</strong>
+	    <a href="../index.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 	<div id="main">
 	    <center><h1>!Hola <strong>usuario</strong>! Bienvenida de nuevo</h1></center>
