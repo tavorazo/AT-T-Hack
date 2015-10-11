@@ -3,7 +3,7 @@ header("Content-Type: text/html;charset=utf-8");
 
 if(isset($_POST["type"]) && !empty($_POST["type"])){
     $type = $_POST["type"];
-    echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
+    //echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
     //echo $_POST['nombre'],$_POST['apellido'],$_POST['cedula'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf'];
     switch($type){
         case 'client':client($_POST['nombre'],$_POST['apellido'],$_POST['edad'],$_POST['email'],$_POST['email-conf'],$_POST['password'],$_POST['password-conf']);
@@ -24,15 +24,15 @@ else{
             if($email==$emailc){
                 if($password==$passwordc){
                     include("base.php");
+                    $dbh->query("INSERT INTO paciente(nombre,apellidos,edad,correo,password) VALUES($nombre, $apellido, $edad, $correo, $password)");
                     //$dbh = new PDO("mysql:host=wbx.technology;dbname=wbxtechn_diagnosticApp", 'diagnosticApp', 'diagnosticApp#');
-                    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    $stmt = $dbh->prepare("INSERT INTO paciente(nombre,apellidos,edad,correo,password) VALUES(?, ?, ?, ?, ?)");
-                    $stmt->bindParam(1,$nombre);
+                  //  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    /*$stmt->bindParam(1,$nombre);
                     $stmt->bindParam(2,$apellido);
                     $stmt->bindParam(3,$edad);
                     $stmt->bindParam(4,$email);
                     $stmt->bindParam(5,$password);
-                    $stmt->execute();
+                    $stmt->execute();*/
                     echo "ok";
                 }
                 else{
@@ -50,15 +50,16 @@ else{
             if($email==$emailc){
                 if($password==$passwordc){
                     include("base.php");
+                    $dbh->query("INSERT INTO doctor(nombre,apellidos,cedula,correo,password) VALUES($nombre, $apellido, $edad, $correo, $password)");
                     //$dbh = new PDO("mysql:host=localhost;dbname=diagnosticApp", 'diagnosticApp', 'diagnosticApp#');
-                    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    $stmt = $dbh->prepare("INSERT INTO doctor(nombre,apellidos,cedula,correo,password) VALUES(?, ?, ?, ?, ?)");
+                    //$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    /*$stmt = $dbh->prepare("INSERT INTO doctor(nombre,apellidos,cedula,correo,password) VALUES($nombre, $apellido, $cedula, $correo, $password)");
                     $stmt->bindParam(1,$nombre);
                     $stmt->bindParam(2,$apellido);
                     $stmt->bindParam(3,$cedula);
                     $stmt->bindParam(4,$email);
                     $stmt->bindParam(5,$password);
-                    $stmt->execute();
+                    $stmt->execute();*/
                     echo "ok";
                 }
                 else{
@@ -76,15 +77,16 @@ else{
             if($email==$emailc){
                 if($password==$passwordc){
                     include("base.php");
+                    $dbh->query("INSERT INTO clinica(nombre,apellidos,cedula,correo,password) VALUES($nombre, $apellido, $edad, $correo, $password)");
                     //$dbh = new PDO("mysql:host=localhost;dbname=diagnosticApp", 'diagnosticApp', 'diagnosticApp#');
-                    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    $stmt = $dbh->prepare("INSERT INTO clinica(nombre,localidad,cedula,correo,password) VALUES(?, ?, ?, ?, ?)");
+                   // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                   /* $stmt = $dbh->prepare("INSERT INTO clinica(nombre,localidad,cedula,correo,password) VALUES(?, ?, ?, ?, ?)");
                     $stmt->bindParam(1,$nombre);
                     $stmt->bindParam(2,$apellido);
                     $stmt->bindParam(3,$cedula);
                     $stmt->bindParam(4,$email);
                     $stmt->bindParam(5,$password);
-                    $stmt->execute();
+                    $stmt->execute();*/
                     echo "ok";
                 }
                 else{
