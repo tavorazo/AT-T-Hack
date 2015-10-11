@@ -18,19 +18,19 @@
 	    <br><br>
 	    <div class="panel" id="usuario">
 	        <div class="option">
-	            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-health/512/microscope-128.png">
+	            <img src="images/2.png">
 	            <p> Registra tus archivos</p>
 	        </div>
 	        <div class="option">
-	            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-health/512/pulse_heart-128.png">
+	            <img src="images/3.png">
 	            <p> Solicita diagnostico</p>
 	        </div>
 	        <div class="option">
-	           <img src="https://cdn2.iconfinder.com/data/icons/flat-icons-web/40/Chat_Alt-128.png">
+	           <img src="images/1.png">
 	            <p> Chat con el doctor</p>
 	        </div>
 	        <div class="option">
-	            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-health/512/medic_sign-128.png">
+	            <img src="images/4.png">
 	            <p> Llamada de emergencia</p>
 	        </div>
 	    </div>
