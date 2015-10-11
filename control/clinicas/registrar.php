@@ -1,5 +1,5 @@
 <?php
-include("base.php");
+include("../Back/base.php");
 $dbh->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctores");
 
 $doctores="";
