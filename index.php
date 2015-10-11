@@ -53,7 +53,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 				<div class="feature">
 					<i class="fa fa-diamond"></i>
 					<h3>Doctores</h3>
-					<p>Los <strong>mejores</strong> doctores de México en tu celular.</p>
+					<p>Asesoria <strong>gratuita</strong> y los <strong>mejores</strong> doctores de México en tu celular.</p>
 				</div>
 	<!--div class="feature">
 		<i class="fa fa-paper-plane-o"></i>
@@ -125,6 +125,10 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<div class="form-control narrow">
 				<label for="cedula">Cedula doctor</label>
 				<input name="cedula" id="cedula" type="text" required>
+			</div>
+			<div class="form-control narrow">
+				<label for="especialidad">Especialidad</label>
+				<input name="especialidad" id="especialidad" type="text" required>
 			</div>
 			<div class="form-control narrow">
 				<label for="email">Correo</label>

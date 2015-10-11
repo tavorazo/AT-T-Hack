@@ -1,5 +1,15 @@
 <!-- Three -->
-		<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assets</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/extra.css" />
+</head>
+<body>		
 			<section id="three" class="wrapper">
 				<div class="inner">
 
@@ -402,4 +412,15 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 				</div>
 			</section>
-		-->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/show-hide.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+/*index.php*/
 #banner img{
 	width: 140px;
 	margin: auto;
@@ -6,7 +7,6 @@
 .boton{
 	width: 30.3%;
 	height: 100px;
-	background: rgb(0, 205, 207);
 	margin-left: 1%;
 	font-size: 1em;
 	color:#fff;
@@ -26,7 +26,7 @@ form{
 	margin-top: 150px;
 }
 
-
+/*login.php*/
 #bg-login{
 	background: url("http://blog.elekta.com/wp-content/uploads/2013/04/Elekta_VersaHD_28_RKP.jpg");
 	background-position: 0;
@@ -42,25 +42,25 @@ form{
 }
 
 #etiqueta{
-	width: 60%;
+	width: 100%;
 	margin: auto;
-	padding:10px 2%;
+	padding:20px 2%;
 	color: #fafafa;
-	font-size: 20px;
-	background: #00cdcf;
+	font-size: 1em;
+	background: #EE4CBE;
 	text-align: center;
 }
 form.login{
-	background: #f2f2f2;
-	width: 60%;
+	width: 100%;
 	margin: auto;
-	padding: 20% 2%;
+	padding: 15% 2%;
 }
 form.login label {
 	float: left;
 	width: 120px;
 }
 form.login input{
+	background: #f2f2f2;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -74,19 +74,133 @@ form.login input[type='submit']:hover{
 }
 
 form.login span {
-	margin: -45px -15px;
-	width: 30px;
+	width: 10%;
     text-align: center;
-    background: #f2f2f2;
-    position: absolute;
+    margin-top: 14px;
+    /*position: absolute;
+    margin: -45px -15px;
     left: 50%;
-	color: #00cdcf;
+	*/color: #EE4CBE;
 	font-size: 20px;	
+	float: left;
 }
 form.login hr {
-	border-color: #00cdcf;
+	border-color: #EE4CBE;
+	width: 45%;
+	float: left;
 }
 form.login a {
 	text-align: center;
 	text-decoration: none;
 }
+
+/*panel.php*/
+#bg-panel{
+	background:#fafafa;
+}
+#menu{
+	width:100%;
+	background:#333;
+	color:#fff;
+	height:70px;
+	padding:20px 20px 0 20px;
+}
+#menu h6{
+	text-align:right;
+	color: #fafafa;
+}
+#menu h6 strong{
+	color: #fafafa;
+	text-decoration:none;
+}
+#menu img{
+	float:left;
+	width:20px;
+	margin:0 15px;
+}
+#main{
+	width:100%;
+	min-height: 500px;
+	margin:100px auto;
+}
+.panel{
+	margin:auto;
+	width:90%;
+	min-height:300px;
+}
+.panel .option{
+	width:100%;
+	margin:10px 0;
+	background: #fff;
+	cursor: pointer;
+}
+.option img{
+	margin:10px 40%;
+	width:20%;
+}
+.option p{
+	width:100%;
+	height:50px;
+	border-top:solid 2px #F190D4;
+	padding: 10px 0 0 0;
+	text-align:center;
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; -ms-transition: all .4s ease; transition: all .4s ease;
+}
+.option:hover  p{
+	border-top:10px solid #F190D4;
+}
+.lista .td{
+	width:100%;
+	margin:auto;
+	height:200px;
+	padding:15px;
+	background:#fff;
+	margin-bottom:20px;
+	border: 1px solid #F190D4;
+}
+.lista .td #img{
+	width:100%;
+	float:left;
+	padding:0 0;
+}
+.lista .td #datos{
+	float:right;
+	height:100%;
+	width:100%;
+}
+#datos p{
+	padding:0 0px;
+	margin:0;
+	font-size:.8em;
+}
+
+@media (min-width: 650px) {
+  /*login.php*/
+  form.login, #etiqueta{
+    width:50%;
+  }
+  form.login{
+  	background: #f2f2f2;
+  }
+  form.login input[type='text'], form.login input[type='password']{
+  	background: #fff;
+  }
+  
+  /*panel.php*/
+  .panel .option{
+		position:relative;
+		float:left;
+		width:24%;
+		margin-left:1%;
+		height:100%;
+	}
+	.option img{
+		margin:25%;
+		width:50%;
+	}
+	.lista .td{
+		width:70%;
+	}
+	
+}
+
