@@ -29,10 +29,10 @@
 		<script>
 			$(document).ready(function() {
 				$("#owl-demo").owlCarousel({
-					goToFirstSpeed : 500,
+					goToFirstSpeed : 50,
 					navigation : false,
-					slideSpeed : 500,
-					paginationSpeed :500,
+					slideSpeed : 50,
+					paginationSpeed : 50,
 					singleItem : true, 
 					dots: false
 				});
