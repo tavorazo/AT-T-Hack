@@ -1,0 +1,5 @@
+host = localhost
+type = mysql
+user = root
+password = KisekiHoshi7
+name = academy

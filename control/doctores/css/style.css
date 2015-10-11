@@ -1,0 +1,6 @@
+.slide img, #owl-demo {
+	display : block;
+	width : auto;
+	height : 50%;
+	margin : 0 auto;
+}

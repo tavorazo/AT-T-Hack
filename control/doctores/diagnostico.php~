@@ -26,10 +26,12 @@
 		<script>
 			$(document).ready(function() {
 				$("#owl-demo").owlCarousel({
-					goToFirstSpeed : 500,
+					autoPlay : 100,
+					stopOnHover : true,
+					goToFirstSpeed : 0,
 					navigation : false,
-					slideSpeed : 500,
-					paginationSpeed :500,
+					slideSpeed : 100,
+					paginationSpeed : 0,
 					singleItem : true
 				});
 			});
