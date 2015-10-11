@@ -4,9 +4,9 @@
 	//$query = 'SELECT url FROM study WHERE id = x';
 	//$resultSet = $link -> getResultSet($query);
 	$base = 'http://wbx.technology/DICOM/0000';
-	$count = 40;
+	$count = 80;
 	$resultSet = array();
-	for($i = 0; $i < 40; $i ++)
+	for($i = 0; $i < 80; $i ++)
 		if($i < 10)
 			$resultSet[] = $base . '0' . $i . '.png';
 		else
