@@ -13,7 +13,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 	<script type="text/javascript">
 	$(function(){
 		$('#client').click(function(){
-			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			var url = '/control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -25,7 +25,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			return false;
 		});
 		$('#doc').click(function(){
-			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			var url = '/control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -37,7 +37,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			return false;
 		});
 		$('#clin').click(function(){
-			var url = 'https://midgardsystems.mx/Medical/control/Back/registro.php';
+			var url = '/control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
