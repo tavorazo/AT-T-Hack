@@ -1816,6 +1816,7 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
+	input[type="textarea"],
 	button,
 	.button {
 		-moz-appearance: none;
@@ -1937,6 +1938,7 @@
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
+		input[type="textarea"].alt,
 		button.alt,
 		.button.alt {
 			background-color: transparent;

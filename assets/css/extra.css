@@ -153,6 +153,15 @@ form.login a {
 .option:hover  p{
 	border-top:10px solid #F190D4;
 }
+.panel h1{
+	text-align: center;
+	font-size: 1.6em;
+	margin-bottom: 40px;
+}
+.panel a{
+	text-decoration: none;
+	color: #555;
+}
 .lista .td{
 	width:100%;
 	margin:auto;
