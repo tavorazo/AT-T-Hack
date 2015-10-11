@@ -2,12 +2,13 @@
 include("../Back/base.php");
 
 
-$dbh->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctor");
+$resultado->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctor");
 
 $doctores="";
-while($rowDbh=mysql_fetch_object($dbh)){
-	$doctores.="<option value='".$rowDbh->id_doctor."'>".$rowDbh->NomDr."</option>";
-} 
+while($res = $resultado->fetch_object()){
+	$doctores.="<option value='".$res->id_doctor."'>".$res->NomDr."</option>";
+}
+
 ?>
 <!DOCTYPE html>
 <html>
