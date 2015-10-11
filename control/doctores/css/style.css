@@ -4,3 +4,8 @@
 	height : 50%;
 	margin : 0 auto;
 }
+
+@media (max-width: 650px) {
+.slide img{ width: 100%}
+
+}

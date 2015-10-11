@@ -13,6 +13,9 @@
 		<link rel = 'stylesheet' href = 'owl.carousel/owl-carousel/owl.carousel.css'>
 		<script src = 'Dependency/jquery-1.11.3.min.js'></script>
 		<script src = 'owl.carousel/owl-carousel/owl.carousel.min.js'></script>
+		<style> 
+			span{     visibility: hidden;}
+		</style>
 </head>
 <body id="bg-panel">
 	<div id="menu">
@@ -30,7 +33,8 @@
 					navigation : false,
 					slideSpeed : 500,
 					paginationSpeed :500,
-					singleItem : true
+					singleItem : true, 
+					dots: false
 				});
 			});
 		</script>
