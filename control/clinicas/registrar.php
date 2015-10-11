@@ -1,18 +1,13 @@
 <?php
-echo("test");
 include("../Back/base.php");
 
-echo("test");
 
-/*
-$dbh->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctores");
+$dbh->query("SELECT id_doctor, (nombre + ' ' + apellidos) as NomDr FROM doctor");
 
 $doctores="";
 while($rowDbh=mysql_fetch_object($dbh)){
 	$doctores.="<option value='".$rowDbh->id_doctor."'>".$rowDbh->NomDr."</option>";
-}
-
-                  */  
+} 
 ?>
 <!DOCTYPE html>
 <html>
