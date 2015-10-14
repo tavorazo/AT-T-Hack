@@ -4,7 +4,6 @@ Typify by TEMPLATED
 templated.co @templatedco
 Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<meta name="apple-mobile-web-app-capable" content="yes">
 <html>
 <head>
 	<title>DiagnosticApp</title>
@@ -14,7 +13,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 	<script type="text/javascript">
 	$(function(){
 		$('#client').click(function(){
-			var url = 'http://wbx.technology/DICOM/back/registro.php';
+			var url = 'control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -34,7 +33,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			return false;
 		});
 		$('#doc').click(function(){
-			var url = 'http://wbx.technology/DICOM/back/registro.php';
+			var url = 'control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -54,7 +53,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			return false;
 		});
 		$('#clin').click(function(){
-			var url = 'http://wbx.technology/DICOM/back/registro.php';
+			var url = 'control/Back/registro.php';
 			$.ajax({
 				type: "POST",
 				url : url,
@@ -89,7 +88,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<p>Conectate con los <strong>  mejores medicos </strong> del mundo con AT&T </p>
 		<ul class="actions">
 			<li><a href="#registro" class="button special">Registrate</a></li>
-			<li><a href="control/login.html" class="button special2">Entrar</a></li>
+			<li><a href="control/login.php" class="button special2">Entrar</a></li>
 		</ul>
 	</section>
 

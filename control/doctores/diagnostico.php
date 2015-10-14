@@ -16,30 +16,28 @@
 		<style> 
 			span{     visibility: hidden;}
 		</style>
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	
-
-
 </head>
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
-	    <a href="../panel.html"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
+	    <a href="../panel.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 	<div id="main" style="padding:0 10px">
-		<script type="text/javascript">
-	$(function(){
-			var url = 'http://wbx.technology/DICOM/back/picture.php';
-			$.ajax({
-				type: "POST",
-				url : url,
-				//data: $('#clientForm').serialize(),
-				success: function(data){
-					$('#main').html(data);
-				}
+		<?php
+			include_once('picture.php');
+		?>
+		<script>
+			$(document).ready(function() {
+				$("#owl-demo").owlCarousel({
+					goToFirstSpeed : 0,
+					navigation : false,
+					paginationSpeed : 0,
+					slideSpeed : 0,
+					singleItem : true, 
+					dots: false, autoPlay: 50
+				});
 			});
-	});
-	</script>
+		</script>
 		<div class="td">    
             <div id="datos" style="margin-top:20px; padding:10px 5px; ">
                 <p><strong>Doctor:</strong> Dr Nombre Apellido<br>

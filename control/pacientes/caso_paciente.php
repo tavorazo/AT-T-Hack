@@ -11,7 +11,7 @@
 <body id="bg-panel">
 	<div id="menu">
 	    <!--h6>Nombre Usuario | <a href=""><strong>Cerrar sesión</strong></a> </h6-->
-	    <a href="../panel.html"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
+	    <a href="../panel.php"><img src="../../images/logo.png"></img> Diagnostic<strong>App</strong></a>
 	</div>
 	<div id="main" style="padding:0 10px">
 		<img src="http://www.grupogamma.com/wp-content/uploads/2012/09/2d-vs-3d1.jpg" style="width:99%; ">
