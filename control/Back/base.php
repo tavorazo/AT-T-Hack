@@ -1,10 +1,10 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-$server = "wbx.technology";
+$server = "";
 $port = "3306";
-$username = "wbxtechn_diagnos";
-$password = "N^{4pNdu-T0(";
-$db = "wbxtechn_diagnosticApp";
+$username = "";
+$password = ";
+$db = "";
  try{
   //$conn = new PDO("mysql:host=$server;dbname= $db;charset=UTF8", $username, $password); 
   $dbh = new mysqli($server, $username, $password, $db,$port);
